@@ -64,6 +64,7 @@ def find_max_sliding_window(nums, window_size):
 
     return res_arr
 
+# Driver code
 def main():
     target_list = [3, 3, 3, 3, 2, 4, 3, 2, 3, 18]
     nums_list = [[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
