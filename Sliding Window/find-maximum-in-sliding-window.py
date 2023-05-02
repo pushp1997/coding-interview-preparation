@@ -33,11 +33,11 @@ def find_max_sliding_window(nums, window_size):
     # If no elements in nums return empty array
     if not nums:
         return res_arr
-    
+
     # windows size is greater than length of nums then window size = len(nums)
     if window_size > len(nums):
         window_size = len(nums)
-    
+
     deq = deque()
 
     # Insertion for the 1st window
