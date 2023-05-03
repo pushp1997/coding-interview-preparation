@@ -1,5 +1,5 @@
 """
-Smallest Subarray with a given sum
+Smallest Subarray with a given sum (easy)
 
 Leetcode: https://leetcode.com/problems/minimum-size-subarray-sum/ [209]
 
