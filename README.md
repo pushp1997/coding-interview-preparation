@@ -1,5 +1,5 @@
-# Educative: Grokking Coding Interview Patterns Python
-This repo contains my submissions and learnings from the Educative course Grokking Coding Interview Patterns Python 
+# Coding Interview Preparation
+This repository contains my submissions and learnings from the Educative's course: [Grokking Coding Interview Patterns in Python](https://www.educative.io/courses/grokking-coding-interview-patterns-python) 
 
 
 ## Pattern: Sliding Window
