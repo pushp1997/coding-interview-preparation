@@ -54,19 +54,3 @@ def longest_substring_with_k_distinct(k: int, string: str):
         j += 1
 
     return longest_substring_len
-
-
-# Driver code
-def main():
-    k_list = [2, 1, 3]
-    string_list = ["araaci", "araaci", "cbbebi"]
-
-    for i in range(len(k_list)):
-        print(
-            f"Length of the longest substring for: {string_list[i]} with k: {k_list[i]} is: \
-            {longest_substring_with_k_distinct(k_list[i], string_list[i])}"
-        )
-
-
-if __name__ == "__main__":
-    main()

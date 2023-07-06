@@ -4,6 +4,7 @@ Minimum Window Substring
 Leetcode: https://leetcode.com/problems/minimum-window-substring/ [76]
 """
 
+
 # My 1st approach, O(s+t)
 def min_window(s, t):
     target_length = len(t)
@@ -22,16 +23,16 @@ def min_window(s, t):
     # Creating window target
     for char in t:
         target_map[char] = target_map.get(char, 0) + 1
-    
+
     left, min_left = 0, 0
     right, min_right = 0, 0
     cur_window_length, target_window_length = 0, len(target_map)
-    min_window_length = string_length+1
+    min_window_length = string_length + 1
     window_map = {}
     for right in range(string_length):
-        if s[right]in window_map:
+        if s[right] in window_map:
             window_map[s[right]] = window_map.get(s[right], 0) + 1
-        
+
         if s[right] in target_map and target_map[s[right]] == window_map[s[right]]:
             cur_window_length += 1
 
@@ -46,17 +47,4 @@ def min_window(s, t):
                 min_window_length = right - left + 2
                 min_left, min_right = left - 1, right
 
-    return s[min_left: min_right+1]
-
-# Driver Code
-def main():
-    s = ["PATTERN", "LIFE", "ABRACADABRA", "STRIKER", "DFFDFDFVD"]
-    t = ["TN", "I", "ABC", "RK", "VDD"]
-    for i in range(len(s)):
-        print(i + 1, ".\ts: ", s[i], "\n\tt: ", t[i], "\n\tThe minimum substring containing ", \
-            t[i], " is: ", min_window(s[i], t[i]), sep="")
-        print("-" * 98)
-
-
-if __name__ == '__main__':
-    main()
+    return s[min_left : min_right + 1]

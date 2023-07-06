@@ -45,18 +45,3 @@ def smallest_subarray_with_given_sum(s: int, arr: List[int]):
         j += 1
 
     return smallest_subarray_size if smallest_subarray_size <= len(arr) else 0
-
-
-# Driver code
-def main():
-    s_list = [7, 7, 8]
-    arr_list = [[2, 1, 5, 2, 3, 2], [2, 1, 5, 2, 8], [3, 4, 1, 1, 6]]
-
-    for i in range(len(arr_list)):
-        print(
-            f"Smallest subarray length: {smallest_subarray_with_given_sum(s_list[i], arr_list[i])}"
-        )
-
-
-if __name__ == "__main__":
-    main()

@@ -28,17 +28,3 @@ def max_sub_array_of_size_k(k: int, nums: List[int]) -> int:
         i += 1
 
     return max_sum
-
-
-# Driver Code
-def main():
-    nums = [[2, 1, 5, 1, 3, 2], [2, 3, 4, 1, 5]]
-    k = [3, 2]
-    for i in range(len(nums)):
-        print(
-            f"Maximum sum of subarray: {nums[i]} and k: {k[i]} is: {max_sub_array_of_size_k(k[i], nums[i])}"
-        )
-
-
-if __name__ == "__main__":
-    main()

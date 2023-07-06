@@ -83,4 +83,4 @@ def test_find_max_sliding_window():
     ]
 
     for i in range(len(nums_list)):
-        assert find_max_sliding_window(nums_list[i], target_list[i])
+        assert find_max_sliding_window(nums_list[i], target_list[i]) == ans_list[i]
